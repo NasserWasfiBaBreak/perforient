@@ -22,10 +22,15 @@ Open `assets/js/main.js` and fill in `PERFORIENT_CONFIG` at the top:
 - **Domain**: canonical URLs, `sitemap.xml` and `robots.txt` assume `https://www.perforient.com`.
 - **Logo**: `assets/img/logo.svg` (full logo) and `assets/img/favicon.svg` (icon).
 - **Colors**: brand tokens are at the top of `assets/css/styles.css` (navy `#0B1F3A`, orange `#FF7A1A`).
-- **Social preview image**: add a 1200×630 image and an `og:image` meta tag to each page.
+- **Social preview image**: `assets/img/og-image.png` (1200×630). The `og:image` tags currently point to the
+  github.io address. When perforient.com is connected, change them to `https://www.perforient.com/assets/img/og-image.png`.
+- **FAQ**: on the homepage, with matching FAQ structured data in the `<head>`. Edit both together.
+- **404 page**: `404.html` (GitHub Pages serves it automatically for missing pages).
+- **Fonts**: Inter and Manrope are self-hosted in `assets/fonts/` (SIL Open Font License).
 
 ## Preview locally
 ```
-cd site && python3 -m http.server 8000
+python3 -m http.server 8000
 ```
+(run it inside this folder)
 Then open http://localhost:8000

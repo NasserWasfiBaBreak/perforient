@@ -1,498 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perforient - Process Excellence & Workflow Optimization</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process Optimization Consulting for SMBs | PERFORIENT</title>
+  <meta name="description" content="Engineering-led process optimization for small and mid-sized businesses. We cut R&amp;D time by 85% and tripled enrollment capacity for past clients. Free process audit.">
+  <link rel="canonical" href="https://www.perforient.com/">
+  <meta name="theme-color" content="#0B1F3A">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PERFORIENT">
+  <meta property="og:title" content="Process Optimization Consulting for SMBs | PERFORIENT">
+  <meta property="og:description" content="We find where time, money, and people are leaking out of your operations, then fix it. Free process audit.">
+  <meta property="og:url" content="https://www.perforient.com/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "PERFORIENT",
+    "url": "https://www.perforient.com/",
+    "logo": "https://www.perforient.com/assets/img/logo.svg",
+    "slogan": "We don't recommend fixes. We implement them.",
+    "description": "Engineering-led process optimization and operational efficiency consulting for small and mid-sized businesses.",
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Process optimization for small business", "Operational efficiency consulting", "Business process improvement", "Lean Six Sigma", "Workflow automation", "Reducing operational costs"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Process optimization services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Data Collection & Process Mapping"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Process Implementation & Improvement"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Operational & Team Efficiency"}},
+        {"@type": "Offer", "price": "0", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Free Process Audit"}}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-text">Perforient</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#top" class="brand" aria-label="PERFORIENT home">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B1F3A"/><path d="M9 28 L17 20 L22 25 L31 14" fill="none" stroke="#FF7A1A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.5 13.2 L31.6 13.2 L31.6 20.3" fill="none" stroke="#FF7A1A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand__name">PERFORIENT</span>
+    </a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#process">How We Work</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#contact" class="btn btn--primary">Free Process Audit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="eyebrow">Process optimization for small &amp; mid-sized businesses</span>
+        <h1>Your Business Is Losing Money Every Day to <em>Processes Nobody's Fixed</em></h1>
+        <p class="hero__sub">We find where time, money, and people are leaking out of your operations, then fix it. Engineering-led process optimization for small and mid-sized businesses.</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">Get a Free Process Audit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="case-studies/educational-institution.html" class="text-link">See how we cut one client's processing time by 67%</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-award"></i>
-                    <span>Trusted Canadian Consultancy</span>
-                </div>
-                <h1 class="hero-title">Excellence in Every Process</h1>
-                <p class="hero-subtitle">Transforming Canadian businesses through proven methodologies and innovative workflow solutions</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        <span>Explore Services</span>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-comments"></i>
-                        <span>Get Started</span>
-                    </a>
-                </div>
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Proven Results</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-users"></i>
-                        <span>Expert Team</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-leaf"></i>
-                        <span>Sustainable Growth</span>
-                    </div>
-                </div>
-            </div>
+        <div class="hero__trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Lean Six Sigma Green Belt</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>PMP certified</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>30+ years combined experience</span>
         </div>
-        <div class="hero-decoration"></div>
-        <div class="hero-illustration">
-            <i class="fas fa-chart-line"></i>
+      </div>
+
+      <aside class="panel reveal" aria-label="Client results">
+        <div class="panel__title"><span>Client results</span><span class="panel__live">Measured</span></div>
+        <div class="metric">
+          <div class="metric__label">R&amp;D cycle time · Engineering firm</div>
+          <div class="metric__row">
+            <span class="metric__from">3 weeks</span><span class="metric__arrow">→</span><span class="metric__to">3 days</span>
+            <span class="metric__delta">−85%</span>
+          </div>
+          <div class="bar"><span style="--w:85%"></span></div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Perforient</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Driving excellence through proven methodologies</p>
-            </div>
-
-            <div class="about-hero">
-                <div class="about-hero-content">
-                    <div class="about-quote">
-                        <i class="fas fa-quote-left"></i>
-                        <h3>Transforming businesses through operational excellence and continuous improvement</h3>
-                    </div>
-                    <p class="about-intro">
-                        Perforient is a Canadian consultancy dedicated to helping organizations achieve peak performance. We partner with businesses across industries to optimize processes, streamline workflows, and deliver sustainable improvements that create lasting value.
-                    </p>
-                </div>
-                <div class="about-visual">
-                    <div class="visual-circle main-circle">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Excellence</span>
-                    </div>
-                    <div class="visual-circle orbit-1">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <div class="visual-circle orbit-2">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="visual-circle orbit-3">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-features">
-                <div class="about-feature-card">
-                    <div class="feature-icon-wrapper">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h4>Our Mission</h4>
-                    <p>To empower organizations with world-class process optimization strategies that drive measurable results and sustainable growth.</p>
-                </div>
-                <div class="about-feature-card">
-                    <div class="feature-icon-wrapper">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h4>Our Vision</h4>
-                    <p>To be Canada's most trusted partner for operational excellence, recognized for transforming businesses through innovative process solutions.</p>
-                </div>
-                <div class="about-feature-card">
-                    <div class="feature-icon-wrapper">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h4>Our Values</h4>
-                    <p>Integrity, excellence, collaboration, and continuous improvement guide everything we do and every relationship we build.</p>
-                </div>
-            </div>
-
-            <div class="about-stats-row">
-                <div class="stat-item">
-                    <div class="stat-icon-circle">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="stat-content">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon-circle">
-                        <i class="fas fa-compass"></i>
-                    </div>
-                    <div class="stat-content">
-                        <div class="stat-number">360°</div>
-                        <div class="stat-label">Comprehensive Analysis</div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon-circle">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <div class="stat-content">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Continuous Improvement</div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon-circle">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="stat-content">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Partner Support</div>
-                    </div>
-                </div>
-            </div>
+        <div class="metric">
+          <div class="metric__label">Enrollment processing · Educational institution</div>
+          <div class="metric__row">
+            <span class="metric__from">60 min</span><span class="metric__arrow">→</span><span class="metric__to">20 min</span>
+            <span class="metric__delta">−67%</span>
+          </div>
+          <div class="bar"><span style="--w:67%"></span></div>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Comprehensive solutions tailored to your business needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3 class="service-title">Six Sigma Excellence</h3>
-                    <p class="service-description">
-                        Reduce variation and defects in your processes using data-driven DMAIC methodology. Achieve consistent, high-quality outputs and significant cost savings.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="service-title">Agile Transformation</h3>
-                    <p class="service-description">
-                        Embrace flexibility and speed with Agile frameworks. We help teams adopt Scrum, Kanban, and hybrid approaches for faster delivery and improved collaboration.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="service-title">Process Development</h3>
-                    <p class="service-description">
-                        Design and implement robust processes from the ground up. We create scalable frameworks that support growth and adapt to changing business needs.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3 class="service-title">Workflow Improvement</h3>
-                    <p class="service-description">
-                        Optimize existing workflows to eliminate bottlenecks and reduce waste. Streamline operations for maximum efficiency and enhanced productivity.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3 class="service-title">Lean Management</h3>
-                    <p class="service-description">
-                        Maximize value while minimizing waste. Implement Lean principles to create more efficient, responsive operations that deliver exceptional customer value.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3 class="service-title">Change Management</h3>
-                    <p class="service-description">
-                        Successfully navigate organizational change with structured methodologies. We ensure smooth transitions and sustained adoption of new processes.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="metric">
+          <div class="metric__label">Daily processing capacity</div>
+          <div class="metric__row">
+            <span class="metric__from">5 / day</span><span class="metric__arrow">→</span><span class="metric__to">15 / day</span>
+            <span class="metric__delta">3×</span>
+          </div>
+          <div class="bar"><span style="--w:100%"></span></div>
         </div>
-    </section>
+      </aside>
+    </div>
+  </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="why-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Perforient</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="why-number">01</div>
-                    <h3>Proven Methodologies</h3>
-                    <p>We leverage industry-standard frameworks like Six Sigma, Agile, and Lean that have delivered results across thousands of organizations worldwide.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                    <div class="why-number">02</div>
-                    <h3>Tailored Solutions</h3>
-                    <p>No two businesses are alike. We customize our approach to fit your unique challenges, culture, and objectives.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="why-number">03</div>
-                    <h3>Measurable Results</h3>
-                    <p>We focus on tangible outcomes. Every engagement includes clear metrics and KPIs to track improvement and ROI.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="why-number">04</div>
-                    <h3>Knowledge Transfer</h3>
-                    <p>We don't just solve problems—we empower your team with the skills and knowledge to sustain improvements long after we're gone.</p>
-                </div>
-            </div>
+  <!-- ================= PROBLEM ================= -->
+  <section class="section section--soft" id="problem">
+    <div class="wrap problem">
+      <div class="reveal">
+        <span class="eyebrow">The problem</span>
+        <h2>If Any of This Sounds Familiar, You're Bleeding Resources</h2>
+        <p class="lead">Small and mid-sized businesses lose hours every week to manual work, unclear handoffs, and tools that don't fit. It rarely shows up on one line of the P&amp;L, which is why it goes unfixed.</p>
+        <div class="callout">
+          <strong>Most businesses don't have a strategy problem. They have an execution leak.</strong>
+          And it compounds every month you don't fix it.
         </div>
-    </section>
+      </div>
+      <ul class="pain-list reveal">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Tasks take hours that should take minutes</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></span>Your team is burned out doing manual work that should be automated</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>You don't know which tool or system actually fixes the bottleneck</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span>Growth feels harder than it should: more revenue, same chaos</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>No one in-house has time to step back and fix the system itself</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What Our Clients Say</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Real results from real businesses</p>
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>What We Do</h2>
+        <p class="lead">We map your operations, find where the leaks are, and implement the fix, not just a recommendation deck.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/></svg></div>
+          <div class="card__num">01</div>
+          <h3>Data Collection &amp; Process Mapping</h3>
+          <p>We document how work actually happens (not how you think it happens) and quantify where time and money are lost.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+          <div class="card__num">02</div>
+          <h3>Process Implementation &amp; Improvement</h3>
+          <p>We redesign the workflow, pick the right tools, and implement the change. Hands-on, not theoretical.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="card__num">03</div>
+          <h3>Operational &amp; Team Efficiency</h3>
+          <p>We restructure how your team works so the fix sticks after we leave.</p>
+        </article>
+      </div>
+      <div class="delivery reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        <span><strong>Delivery:</strong> Remote-first, with on-site intervention when the problem needs boots on the ground.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROOF ================= -->
+  <section class="section section--dark" id="results">
+    <div class="wrap">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">Proof</span>
+        <h2>Real Results, Not Promises</h2>
+        <p class="lead" style="color:#B8C4D8">Every engagement starts with a measured baseline, so the results are numbers, not impressions.</p>
+      </div>
+      <div class="cases">
+        <article class="case reveal">
+          <span class="case__tag">Engineering firm</span>
+          <div class="case__big">85<span>%</span></div>
+          <div class="case__biglabel">shorter R&amp;D cycle time</div>
+          <h3>R&amp;D Cycle Time: 3 Weeks → 3 Days</h3>
+          <ul>
+            <li>Cut R&amp;D turnaround from 3 weeks to 3 days</li>
+            <li>Freed up budget and redeployed staff to other active projects</li>
+            <li>Delivered within a 3 to 6 month engagement, fully compliant</li>
+          </ul>
+          <a href="case-studies/engineering-firm.html" class="text-link">Read the full case study →</a>
+        </article>
+        <article class="case reveal">
+          <span class="case__tag">Educational institution</span>
+          <div class="case__big">3<span>×</span></div>
+          <div class="case__biglabel">daily enrollment processing capacity</div>
+          <h3>Enrollment Processing: 60 → 20 Minutes</h3>
+          <ul>
+            <li>Reduced per-student processing from 60 to 20 minutes (−67%)</li>
+            <li>Tripled daily capacity from 5 to 15 students per day</li>
+            <li>Supported intake growth from 10 to 100 students over 2 years</li>
+          </ul>
+          <a href="case-studies/educational-institution.html" class="text-link">Read the full case study →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>How We Work</h2>
+        <p class="lead">Four steps from measuring the leak to a fix your team runs on its own.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><div class="step__dot">1</div><h3>Audit</h3><p>We map your current process and quantify the cost of inefficiency.</p></li>
+        <li class="step reveal"><div class="step__dot">2</div><h3>Plan</h3><p>We design the fix: tools, workflow, team structure.</p></li>
+        <li class="step reveal"><div class="step__dot">3</div><h3>Implement</h3><p>We build and deploy it with your team, remote or on-site.</p></li>
+        <li class="step reveal"><div class="step__dot">4</div><h3>Hand-off</h3><p>We document everything so it runs without us.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section section--dark" id="why">
+    <div class="wrap why">
+      <div class="reveal">
+        <span class="eyebrow">Why us</span>
+        <h2>Why PERFORIENT</h2>
+        <p style="color:#B8C4D8">An engineering-led team that measures before it changes anything, and stays until the new process is running.</p>
+        <p class="quote">We don't recommend fixes. <span>We implement them.</span></p>
+      </div>
+      <div class="why__grid">
+        <div class="why__item reveal"><div class="k">LSS <small>+</small> PMP</div><p>Engineering-led team with Lean Six Sigma Green Belt and PMP certification</p></div>
+        <div class="why__item reveal"><div class="k">30<small>+ yrs</small></div><p>Combined operational experience</p></div>
+        <div class="why__item reveal"><div class="k">2 <small>sectors</small></div><p>Proven track record across engineering and education</p></div>
+        <div class="why__item reveal"><div class="k">Remote<small>-first</small></div><p>Remote-first delivery, on-site when it matters</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA / CONTACT ================= -->
+  <section class="section section--soft" id="contact">
+    <div class="wrap contact">
+      <div class="reveal">
+        <span class="eyebrow">Free process audit</span>
+        <h2>Find Out What's Actually Costing You</h2>
+        <p class="lead">Most businesses underestimate how much inefficiency is costing them until someone measures it.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>A walkthrough of the process that's costing you most</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>An estimate of the time and money it's leaking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Clear next steps, with no obligation</li>
+        </ul>
+        <div class="contact__options">
+          <div class="option">
+            <div class="option__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 15h3"/></svg></div>
+            <div>
+              <h3>Prefer to pick a time?</h3>
+              <p>Book a 30-minute audit call directly in our calendar.</p>
+              <a href="#audit-form" class="btn btn--ghost" data-booking>Book Online</a>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        Perforient helped us reduce our production cycle time by 40%. Their Six Sigma approach was methodical and the results speak for themselves.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="author-info">
-                            <div class="author-name">Sarah Chen</div>
-                            <div class="author-role">Operations Director, TechManufacturing Inc.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        The Agile transformation was seamless. Our team is now delivering features twice as fast with better quality. Highly recommend!
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="author-info">
-                            <div class="author-name">Michael Thompson</div>
-                            <div class="author-role">CTO, Digital Solutions Ltd.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        Professional, knowledgeable, and results-driven. Perforient didn't just consult—they became true partners in our success.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <div class="author-name">Jennifer Martin</div>
-                            <div class="author-role">VP Operations, Canadian Retail Group</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Ready to transform your processes? Let's start a conversation.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Start Your Journey to Excellence</h3>
-                    <p>Whether you're looking to optimize a single workflow or transform your entire operation, Perforient is here to help.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>info@perforient.ca</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Canada</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon - Fri: 9:00 AM - 6:00 PM EST</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="company" name="company" placeholder="Company Name">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your needs" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>Send Message</span>
-                    </button>
-                </form>
-            </div>
+      <form class="form reveal" id="audit-form" novalidate>
+        <h3>Book Your Free Process Audit</h3>
+        <p>Tell us a little about your business. We reply within one business day.</p>
+        <div class="form__row">
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-text">Perforient</span>
-                    </div>
-                    <p class="footer-tagline">Excellence in Every Process</p>
-                    <p class="footer-description">Transforming Canadian businesses through proven methodologies and innovative workflow solutions.</p>
-                    <div class="footer-social">
-                        <a href="#" class="footer-social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="footer-social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="footer-social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Solutions</h4>
-                        <ul>
-                            <li><a href="#services">Six Sigma</a></li>
-                            <li><a href="#services">Agile</a></li>
-                            <li><a href="#services">Lean</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Process Development</a></li>
-                            <li><a href="#services">Workflow Improvement</a></li>
-                            <li><a href="#services">Change Management</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Perforient. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span>•</span>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
+        <div class="form__row">
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required></div>
+          <div class="field">
+            <label for="f-size">Company size</label>
+            <select id="f-size" name="company_size">
+              <option>1–10 employees</option>
+              <option selected>11–50 employees</option>
+              <option>51–200 employees</option>
+              <option>200+ employees</option>
+            </select>
+          </div>
         </div>
-    </footer>
+        <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-msg">Where do you think time or money is leaking?</label><textarea id="f-msg" name="message" required placeholder="e.g. Our order-to-invoice process takes 4 days and involves 3 spreadsheets."></textarea></div>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <button type="submit" class="btn btn--primary btn--block">Book Your Free Process Audit</button>
+        <p class="form__fine">No obligation. We never share your details.</p>
+        <div class="form__status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a href="#top" class="brand" aria-label="PERFORIENT home">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10"/><path d="M9 28 L17 20 L22 25 L31 14" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.5 13.2 L31.6 13.2 L31.6 20.3" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand__name">PERFORIENT</span>
+        </a>
+        <p class="footer__tag">We don't recommend fixes. <span>We implement them.</span></p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Company</h4>
+          <ul><li><a href="#services">Services</a></li><li><a href="#process">How We Work</a></li><li><a href="#why">Why Us</a></li></ul>
+        </div>
+        <div>
+          <h4>Case studies</h4>
+          <ul><li><a href="case-studies/engineering-firm.html">Engineering firm</a></li><li><a href="case-studies/educational-institution.html">Educational institution</a></li></ul>
+        </div>
+        <div>
+          <h4>Get started</h4>
+          <ul><li><a href="#contact">Free process audit</a></li><li><a href="#audit-form" data-booking>Book online</a></li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> PERFORIENT. All rights reserved.</span>
+      <span>www.perforient.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

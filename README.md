@@ -26,11 +26,13 @@ Open `assets/js/main.js` and fill in `PERFORIENT_CONFIG` at the top:
 
 ## Other things to update later
 - **Client names/logos**: case studies are anonymous on purpose. Add names only once written permission is confirmed.
-- **Domain**: canonical URLs, `sitemap.xml` and `robots.txt` assume `https://www.perforient.com`.
+- **Domain**: the site is served at `https://perforient.com` (set by the `CNAME` file and the repo's Pages
+  settings; the old github.io address redirects there). Canonical URLs, social tags, structured data,
+  `sitemap.xml` and `robots.txt` all use `https://perforient.com`.
 - **Logo**: `assets/img/logo.svg` (full logo) and `assets/img/favicon.svg` (icon).
 - **Colors**: brand tokens are at the top of `assets/css/styles.css` (navy `#0B1F3A`, orange `#FF7A1A`).
-- **Social preview image**: `assets/img/og-image.png` (1200×630). The `og:image` tags currently point to the
-  github.io address. When perforient.com is connected, change them to `https://www.perforient.com/assets/img/og-image.png`.
+- **Social preview image**: `assets/img/og-image.png` (1200×630), referenced as
+  `https://perforient.com/assets/img/og-image.png`.
 - **FAQ**: on the homepage, with matching FAQ structured data in the `<head>`. Edit both together.
 - **404 page**: `404.html` (GitHub Pages serves it automatically for missing pages).
 - **Fonts**: Inter and Manrope are self-hosted in `assets/fonts/` (SIL Open Font License).

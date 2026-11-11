@@ -354,7 +354,7 @@ const PERFORIENT_CONFIG = {
   const calc = document.querySelector("[data-calc]");
   if (calc) {
     const q = (s) => calc.querySelector(s);
-    const people = q("#c-people"), hours = q("#c-hours"), rate = q("#c-rate"), cur = q("#c-cur");
+    const people = q("#c-people"), hours = q("#c-hours"), rate = q("#c-rate");
     const outs = {
       people: q("[data-o=people]"), hours: q("[data-o=hours]"), rate: q("[data-o=rate]"),
       big: q("[data-o=annual]"), month: q("[data-o=month]"), hw: q("[data-o=hw]"),
@@ -362,28 +362,26 @@ const PERFORIENT_CONFIG = {
     };
     const WEEKS = 48, FTE_HOURS = 1800;
     let summary = "";
-    const money = (v, c) => {
-      try { return new Intl.NumberFormat(undefined, { style: "currency", currency: c, maximumFractionDigits: 0 }).format(v); }
-      catch (e) { return c + " " + Math.round(v).toLocaleString(); }
-    };
+    // All amounts are Canadian dollars, shown as "$76,800".
+    const money = (v) => "$" + Math.round(v).toLocaleString("en-CA");
     const fill = (r) => r.style.setProperty("--p", ((r.value - r.min) / (r.max - r.min)) * 100 + "%");
     const update = () => {
       [people, hours, rate].forEach(fill);
-      const p = +people.value, h = +hours.value, r = +rate.value, c = cur.value;
+      const p = +people.value, h = +hours.value, r = +rate.value;
       const hw = p * h, hy = hw * WEEKS, annual = hy * r;
       outs.people.textContent = p + (p === 1 ? " person" : " people");
       outs.hours.textContent = h + " h / week";
-      outs.rate.textContent = money(r, c) + " / h";
-      outs.big.textContent = money(annual, c);
-      outs.month.textContent = money(annual / 12, c);
+      outs.rate.textContent = money(r) + " / h";
+      outs.big.textContent = money(annual);
+      outs.month.textContent = money(annual / 12);
       outs.hw.textContent = hw.toLocaleString() + " h";
       outs.hy.textContent = hy.toLocaleString() + " h";
       outs.fte.textContent = (hy / FTE_HOURS).toFixed(1) + " full-time staff";
-      summary = `Leak estimate: ${p} people × ${h} h/week × ${money(r, c)}/h ≈ ${money(annual, c)} per year (${hy.toLocaleString()} hours).`;
+      summary = `Leak estimate: ${p} people × ${h} h/week × ${money(r)}/h ≈ ${money(annual)} CAD per year (${hy.toLocaleString()} hours).`;
       const hidden = document.querySelector("#f-calc");
       if (hidden) hidden.value = summary;
     };
-    [people, hours, rate, cur].forEach((i) => i.addEventListener("input", update));
+    [people, hours, rate].forEach((i) => i.addEventListener("input", update));
     update();
 
     const send = q("[data-calc-send]");

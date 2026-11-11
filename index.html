@@ -43,7 +43,7 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Data Collection & Process Mapping"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Process Implementation & Improvement"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Operational & Team Efficiency"}},
-        {"@type": "Offer", "price": "0", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Free Process Audit"}}
+        {"@type": "Offer", "price": "0", "priceCurrency": "CAD", "itemOffered": {"@type": "Service", "name": "Free Process Audit"}}
       ]
     }
   }
@@ -340,24 +340,14 @@
             <div class="slider__ticks" aria-hidden="true"><span>1 h</span><span>10 h</span><span>20 h</span></div>
           </div>
           <div class="slider">
-            <label for="c-rate"><span>Loaded cost per hour (salary + overhead)</span><output data-o="rate" for="c-rate"></output></label>
+            <label for="c-rate"><span>Loaded cost per hour in CAD (salary + overhead)</span><output data-o="rate" for="c-rate"></output></label>
             <input type="range" id="c-rate" min="10" max="200" step="5" value="40">
-            <div class="slider__ticks" aria-hidden="true"><span>10</span><span>100</span><span>200</span></div>
+            <div class="slider__ticks" aria-hidden="true"><span>$10</span><span>$100</span><span>$200</span></div>
           </div>
-          <div class="calc__cur">
-            <label for="c-cur">Currency</label>
-            <select id="c-cur">
-              <option value="USD" selected>USD</option>
-              <option value="CAD">CAD</option>
-              <option value="EUR">EUR</option>
-              <option value="GBP">GBP</option>
-              <option value="AED">AED</option>
-              <option value="SAR">SAR</option>
-            </select>
-          </div>
+          <p class="calc__note">All amounts are in Canadian dollars (CAD).</p>
         </div>
         <div class="calc__out" aria-live="polite">
-          <span class="eyebrow">Estimated annual leak</span>
+          <span class="eyebrow">Estimated annual leak (CAD)</span>
           <div class="calc__big" data-o="annual">—</div>
           <dl class="calc__rows">
             <div><dt>Per month</dt><dd data-o="month"></dd></div>

@@ -148,8 +148,31 @@
     </div>
   </section>
 
+  <!-- ================= SEE THE FIX (process animation) ================= -->
+  <section class="section" id="see-the-fix">
+    <div class="wrap">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">See it in action</span>
+        <h2>Watch a Leak Get Fixed</h2>
+        <p class="lead">A simplified map of a real client's R&amp;D workflow. Work flows left to right, and some of it leaks out along the way. Press <strong>Apply the fix</strong> to see what we removed and automated.</p>
+      </div>
+      <figure class="flow reveal" id="dg-home" data-diagram="rd">
+        <div class="flow__bar">
+          <span class="flow__title">R&amp;D workflow · Engineering firm</span>
+          <span class="flow__status" aria-live="polite"><span class="flow__dot" aria-hidden="true"></span><span>Leaking</span></span>
+          <div class="flow__toggle" role="group" aria-label="Diagram state">
+            <button type="button" data-state="before" aria-pressed="true">Current process</button>
+            <button type="button" data-state="after" class="is-fix" aria-pressed="false">Apply the fix</button>
+          </div>
+        </div>
+        <div class="flow__canvas"></div>
+        <figcaption class="flow__cap">Simplified from a real engagement. The R&amp;D cycle went from 3 weeks to 3 days, with full regulatory compliance. <a href="case-studies/engineering-firm.html" class="text-link">Read the case study →</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- ================= SERVICES ================= -->
-  <section class="section" id="services">
+  <section class="section section--soft" id="services">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">What we do</span>
@@ -296,6 +319,60 @@
     </div>
   </section>
 
+  <!-- ================= LEAK CALCULATOR ================= -->
+  <section class="section section--dark" id="calculator">
+    <div class="wrap">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">Leak calculator</span>
+        <h2>What Is the Leak Costing You?</h2>
+        <p class="lead" style="color:#B8C4D8">Move the sliders. A rough number is enough to see whether the problem is worth fixing. Nothing you enter is sent anywhere.</p>
+      </div>
+      <div class="calc reveal" data-calc>
+        <div class="calc__in">
+          <div class="slider">
+            <label for="c-people"><span>People affected by the slow process</span><output data-o="people" for="c-people"></output></label>
+            <input type="range" id="c-people" min="1" max="100" step="1" value="8">
+            <div class="slider__ticks" aria-hidden="true"><span>1</span><span>50</span><span>100</span></div>
+          </div>
+          <div class="slider">
+            <label for="c-hours"><span>Hours each person loses per week to manual work, rework or waiting</span><output data-o="hours" for="c-hours"></output></label>
+            <input type="range" id="c-hours" min="1" max="20" step="1" value="5">
+            <div class="slider__ticks" aria-hidden="true"><span>1 h</span><span>10 h</span><span>20 h</span></div>
+          </div>
+          <div class="slider">
+            <label for="c-rate"><span>Loaded cost per hour (salary + overhead)</span><output data-o="rate" for="c-rate"></output></label>
+            <input type="range" id="c-rate" min="10" max="200" step="5" value="40">
+            <div class="slider__ticks" aria-hidden="true"><span>10</span><span>100</span><span>200</span></div>
+          </div>
+          <div class="calc__cur">
+            <label for="c-cur">Currency</label>
+            <select id="c-cur">
+              <option value="USD" selected>USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="AED">AED</option>
+              <option value="SAR">SAR</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc__out" aria-live="polite">
+          <span class="eyebrow">Estimated annual leak</span>
+          <div class="calc__big" data-o="annual">—</div>
+          <dl class="calc__rows">
+            <div><dt>Per month</dt><dd data-o="month"></dd></div>
+            <div><dt>Hours lost per week</dt><dd data-o="hw"></dd></div>
+            <div><dt>Hours lost per year</dt><dd data-o="hy"></dd></div>
+            <div><dt>Equivalent to</dt><dd data-o="fte"></dd></div>
+          </dl>
+          <a href="#audit-form" class="btn btn--primary btn--block" data-calc-send>Add This to My Audit Request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+          </a>
+          <p class="calc__fine">Estimate based on 48 working weeks and 1,800 hours per full-time employee. The audit measures your real figure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= FINAL CTA / CONTACT ================= -->
   <section class="section section--soft" id="contact">
     <div class="wrap contact">
@@ -341,6 +418,7 @@
         </div>
         <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="f-msg">Where do you think time or money is leaking?</label><textarea id="f-msg" name="message" required placeholder="e.g. Our order-to-invoice process takes 4 days and involves 3 spreadsheets."></textarea></div>
+        <input type="hidden" name="leak_estimate" id="f-calc">
         <div class="hp" aria-hidden="true"><label>Leave empty<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="btn btn--primary btn--block">Book Your Free Process Audit</button>
         <p class="form__fine">No obligation. We never share your details.</p>

@@ -11,9 +11,14 @@ Plain HTML/CSS/JS, so there is no build step. Upload the contents of this `site/
 ## Before going live (2 settings)
 Open `assets/js/main.js` and fill in `PERFORIENT_CONFIG` at the top:
 
-1. **`formEndpoint`**: where the audit form sends submissions.
-   Free option: create a form at https://formspree.io, then paste its URL, e.g. `"https://formspree.io/f/abcdwxyz"`.
-   Submissions are then emailed to you. Until it is set, the form shows a "not connected yet" notice.
+1. **`formEndpoint`**: where the audit form sends submissions. It is set to
+   `https://formsubmit.co/ajax/info@perforient.com`, a free relay (no account) that emails every
+   submission to **info@perforient.com** as a table, with the visitor's email as reply-to.
+   - **One-time activation:** the very first submission sends an "Activate Form" email to
+     info@perforient.com. Click the link in it; until then submissions are not delivered.
+   - **Optional, hides the address from spammers:** after activating, FormSubmit emails a random
+     alias string. Replace `info@perforient.com` in the URL with that string.
+   - To change the inbox, change the email in the URL (and activate again).
 2. **`bookingUrl`**: your online booking page (Calendly, Cal.com, Google Calendar booking page…).
    Every "Book Online" button uses it. Until it is set, those buttons scroll to the form.
 

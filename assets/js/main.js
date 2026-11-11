@@ -5,8 +5,9 @@
 const PERFORIENT_CONFIG = {
   // Your online booking page, e.g. a Calendly / Cal.com / Google Calendar link.
   bookingUrl: "",
-  // Form endpoint that emails you submissions, e.g. "https://formspree.io/f/abcdwxyz".
-  formEndpoint: "",
+  // Where the audit form sends submissions. FormSubmit emails each one to info@perforient.com.
+  // The first submission triggers a one-time "Activate Form" email to that inbox (see README.md).
+  formEndpoint: "https://formsubmit.co/ajax/info@perforient.com",
 };
 
 (function () {
@@ -89,12 +90,18 @@ const PERFORIENT_CONFIG = {
       const label = btn.textContent;
       btn.textContent = "Sending…";
       try {
+        const data = Object.fromEntries(new FormData(form));
+        delete data._honey;
+        data._subject = "New audit request: " + (data.company || data.name);
+        data._template = "table";
+        data._captcha = "false";
         const res = await fetch(PERFORIENT_CONFIG.formEndpoint, {
           method: "POST",
-          body: new FormData(form),
-          headers: { Accept: "application/json" },
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
         });
-        if (!res.ok) throw new Error(String(res.status));
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || String(out.success) === "false") throw new Error(out.message || String(res.status));
         form.reset();
         show("Thanks! We've received your request and will reply within one business day to schedule your audit.", true);
       } catch (err) {

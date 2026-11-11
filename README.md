@@ -19,8 +19,10 @@ Open `assets/js/main.js` and fill in `PERFORIENT_CONFIG` at the top:
    - **Optional, hides the address from spammers:** after activating, FormSubmit emails a random
      alias string. Replace `info@perforient.com` in the URL with that string.
    - To change the inbox, change the email in the URL (and activate again).
-2. **`bookingUrl`**: your online booking page (Calendly, Cal.com, Google Calendar booking page…).
-   Every "Book Online" button uses it. Until it is set, those buttons scroll to the form.
+2. **`bookingUrl`**: the online booking page, set to the 30-minute Calendly event
+   `https://calendly.com/nasser-perforient/30min`. Every "Book Online" link opens it in a new tab.
+   The link is also written into each "Book Online" link in the HTML (so it works without JavaScript);
+   to change it, update `bookingUrl` and those links (search the site for `data-booking`).
 
 ## Other things to update later
 - **Client names/logos**: case studies are anonymous on purpose. Add names only once written permission is confirmed.

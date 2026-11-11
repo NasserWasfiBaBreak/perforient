@@ -4,7 +4,7 @@
    ========================================================= */
 const PERFORIENT_CONFIG = {
   // Your online booking page, e.g. a Calendly / Cal.com / Google Calendar link.
-  bookingUrl: "",
+  bookingUrl: "https://calendly.com/nasser-perforient/30min",
   // Where the audit form sends submissions. FormSubmit emails each one to info@perforient.com.
   // The first submission triggers a one-time "Activate Form" email to that inbox (see README.md).
   formEndpoint: "https://formsubmit.co/ajax/info@perforient.com",

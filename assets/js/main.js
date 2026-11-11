@@ -105,7 +105,8 @@ const PERFORIENT_CONFIG = {
         form.reset();
         show("Thanks! We've received your request and will reply within one business day to schedule your audit.", true);
       } catch (err) {
-        show("Something went wrong sending your request. Please try again in a moment.", false);
+        console.error("Audit form not sent:", err.message); // e.g. FormSubmit "needs Activation"
+        show("Sorry, your request couldn't be sent right now. Please try again in a moment, or email us directly at info@perforient.com.", false);
       } finally {
         btn.disabled = false;
         btn.textContent = label;
